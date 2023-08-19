@@ -36,6 +36,10 @@ struct DetailView: View {
                 .font(.title)
                 .foregroundColor(.secondary)
             
+            Text("Date added: \(book.date?.formatted() ?? "N/A")")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+            
             Text(book.review ?? "No review")
                 .padding()
             
